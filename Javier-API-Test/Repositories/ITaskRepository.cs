@@ -9,9 +9,8 @@ namespace Javier_API_Test.Repositories
     public interface ITaskRepository
     {
         Task<IEnumerable<ToDo>> Get();
-        Task<ToDo> Get(int id);
+        Task<ToDo> Get(Guid Id);
         Task<ToDo> Create(ToDo task);
         Task Update(ToDo task);
-        Task Delete(int id);
     }
 }

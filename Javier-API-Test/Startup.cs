@@ -1,7 +1,5 @@
-using BookAPI.Repositories;
-using Javier_API_Test.Models;
 using Javier_API_Test.Repositories;
-//using Javier_API_Test.Repositories;
+using Javier_API_Test.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

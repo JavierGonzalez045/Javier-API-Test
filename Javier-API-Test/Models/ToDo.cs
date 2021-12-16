@@ -11,7 +11,7 @@ namespace Javier_API_Test.Models
         public string Title { get; set; }
         public DateTime DueDate { get; set; }
         public DateTime MnfDate { get; set; }
-        public string Status { get; set; }
-        public int Id { get; set; }
+        public enum Status { Pending, Completed, Cancel };
+        public Guid Id { get; set;}
     }
 }

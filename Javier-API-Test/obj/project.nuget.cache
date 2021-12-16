@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a6q7fLonM1IbQgf1P5qHpkUNhUozrFhTUtnGuilxYCjSiJO4NeZZHKe/MAONmbB+rOZ6WxVUU4XF7Ad31WgAiw==",
+  "dgSpecHash": "IUkTKeyVyJ5DU3jNtDwCfQV+xMEKdpfFOzCFEezBkUPpg3jPNBovAmj/M3bCKQa+zN/rdHgAl/dfltDrlvGuBg==",
   "success": true,
   "projectFilePath": "C:\\Users\\javie\\OneDrive\\Escritorio\\Javier API-Test\\Javier-API-Test\\Javier-API-Test.csproj",
   "expectedPackageFiles": [
@@ -113,7 +113,8 @@
     "C:\\Users\\javie\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\javie\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\javie\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\javie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }

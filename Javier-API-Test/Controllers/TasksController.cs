@@ -32,8 +32,12 @@ namespace Javier_API_Test.Controllers
         }
 
         [HttpGet("{Id}")]
-        public async Task<ActionResult<ToDo>> GetTasks(int Id)
+        public async Task<ActionResult<ToDo>> GetTasks(Guid Id)
         {
+            if (Id == null)
+            {
+                return NotFound();
+            }
             return await _taskRepository.Get(Id);
         }
 
@@ -44,8 +48,8 @@ namespace Javier_API_Test.Controllers
             return CreatedAtAction(nameof(GetTasks), new { id = newTask.Id }, newTask);
         }
 
-        [HttpPut]
-        public async Task<ActionResult> PutTasks(int id, [FromBody] ToDo task)
+        [HttpPatch]
+        public async Task<ActionResult> PutTasks(Guid id, [FromBody] ToDo task)
         {
             if (id != task.Id)
             {
@@ -54,17 +58,6 @@ namespace Javier_API_Test.Controllers
 
             await _taskRepository.Update(task);
 
-            return NoContent();
-        }
-
-        [HttpDelete("{Id}")]
-        public async Task<ActionResult> Delete(int id)
-        {
-            var taskToDelete = await _taskRepository.Get(id);
-            if (taskToDelete == null)
-                return NotFound();
-
-            await _taskRepository.Delete(taskToDelete.Id);
             return NoContent();
         }
     }

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookAPI.Repositories
+namespace Javier_API_Test.Repositories
 {
     public class TaskRepository : ITaskRepository
     {
@@ -25,19 +25,12 @@ namespace BookAPI.Repositories
             return task;
         }
 
-        public async Task Delete(int Id)
-        {
-            var bookToDelete = await _context.Tasks.FindAsync(Id);
-            _context.Tasks.Remove(bookToDelete);
-            await _context.SaveChangesAsync();
-        }
-
         public async Task<IEnumerable<ToDo>> Get()
         {
             return await _context.Tasks.ToListAsync();
         }
 
-        public async Task<ToDo> Get(int Id)
+        public async Task<ToDo> Get(Guid Id)
         {
             return await _context.Tasks.FindAsync(Id);
         }
