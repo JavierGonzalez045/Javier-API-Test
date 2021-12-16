@@ -8,10 +8,10 @@ namespace Javier_API_Test.Models
 {
     public class ToDo
     {
-        public int Title { get; set; }
+        public string Title { get; set; }
         public DateTime DueDate { get; set; }
         public DateTime MnfDate { get; set; }
-        public int Status { get; set; }
+        public string Status { get; set; }
         public int Id { get; set; }
     }
 }
